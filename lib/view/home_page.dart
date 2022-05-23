@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
 
   Future loadData() async {
     setState(() => isLoading = true);
-    await Future.delayed(const Duration(seconds: 4), () {});
+    await Future.delayed(const Duration(seconds: 4), () {} );
     foods = List.of(allFoods);
     setState(() => isLoading = false);
   }
